@@ -1,5 +1,7 @@
 # LCDLABEL
 
+![LcdLabel Example](extra/lcdlabel.png)
+
 ## TODO
 
 * Fill out this README
