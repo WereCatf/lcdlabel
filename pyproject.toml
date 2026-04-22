@@ -1,0 +1,36 @@
+[project]
+name = "lcdlabel"
+version = "0.5.0"
+description = "A custom PySide6 label widget that emulates the look of an LCD-display."
+authors = [{ name = "Nita Vesa", email = "nita.vesa@outlook.com" }]
+readme = "README.md"
+license = "BSD-3-Clause"
+requires-python = ">=3.13,<3.15"
+dependencies = ["pyside6 (>=6.11.0,<7.0.0)"]
+keywords = ["PySide6", "Qt", "custom widget", "LCD", "label", "GUI"]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Environment :: Plugins",
+    "Software Development :: User Interfaces",
+]
+
+[tool.poetry]
+packages = [{ include = "lcdlabel", from = "src" }]
+exclude = [
+    "src/lcdlabel/plugin.py",
+    "src/lcdlabel/fonts.qrc",
+    "src/lcdlabel/fonts/**",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
