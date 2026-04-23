@@ -1,6 +1,6 @@
 [project]
 name = "lcdlabel"
-version = "0.5.0"
+version = "0.6.0"
 description = "A custom PySide6 label widget that emulates the look of an LCD-display."
 authors = [{ name = "Nita Vesa", email = "nita.vesa@outlook.com" }]
 readme = "README.md"

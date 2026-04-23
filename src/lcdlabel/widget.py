@@ -23,8 +23,6 @@ class LcdLabel(QWidget):
 
     def __init__(self, parent: QWidget | None = None) -> None:
         super().__init__(parent)
-        self._length = 9
-        self._backgroundPattern = "8."
 
         QtGui.QFontDatabase.addApplicationFont(
             ":/fonts/fonts/DSEG14ClassicMini-Regular.ttf"
@@ -76,8 +74,6 @@ class LcdLabel(QWidget):
         self._layout.setStackingMode(QStackedLayout.StackingMode.StackAll)
         self._layout.addWidget(self._foregroundLabel)
         self._layout.addWidget(self._backgroundLabel)
-        self._backgroundLabel.setText(self._backgroundPattern * self._length)
-        self._foregroundLabel.setText("1.4159")
         self._foregroundColor = QColor(255, 255, 255)
         self._backgroundColor = QColor(60, 60, 60)
         palette = self._backgroundLabel.palette()
@@ -88,6 +84,8 @@ class LcdLabel(QWidget):
         self._foregroundLabel.setPalette(palette)
         font = QFont("DSEG7 Classic Mini", pointSize=18)
         self.setFont(font)
+        self.backgroundText = "8.88888"
+        self.text = "3.14159"
 
     def changeEvent(self, event):
         super().changeEvent(event)
@@ -105,32 +103,11 @@ class LcdLabel(QWidget):
 
         @alignment.setter
         def alignment(self, value: Qt.AlignmentFlag) -> None:
-            if self._foregroundLabel.alignment() != value:
-                self._foregroundLabel.setAlignment(value)
-                self._backgroundLabel.setAlignment(value)
+            self._foregroundLabel.setAlignment(value)
+            self._backgroundLabel.setAlignment(value)
 
     def setAlignment(self, alignment: Qt.AlignmentFlag) -> None:
         self.alignment = alignment
-
-    if TYPE_CHECKING:
-        length: int
-    else:
-
-        @Property(int)
-        def length(self) -> int:
-            return self._length
-
-        @length.setter
-        def length(self, value: int) -> None:
-            if self._length != value and value > 0:
-                self._length = value
-                self._backgroundLabel.setText("8." * self._length)
-                self._foregroundLabel.setText(
-                    self._foregroundLabel.text()[: self._length]
-                )
-
-    def setLength(self, length: int) -> None:
-        self.length = length
 
     if TYPE_CHECKING:
         text: str
@@ -142,16 +119,26 @@ class LcdLabel(QWidget):
 
         @text.setter
         def text(self, value: str) -> None:
-            newText = value[
-                : self._length
-            ].replace(
-                " ", "⠀"
-            )  # Replace spaces with non-breaking spaces, the font doesn't render regular spaces correctly
-            if self._foregroundLabel.text() != newText:
-                self._foregroundLabel.setText(newText)
+            self._foregroundLabel.setText(value.replace(" ", "!"))
 
     def setText(self, text: str) -> None:
         self.text = text
+
+    if TYPE_CHECKING:
+        backgroundText: str
+    else:
+
+        @Property(str)
+        def backgroundText(self) -> str:
+            return self._backgroundLabel.text()
+
+        @backgroundText.setter
+        def backgroundText(self, value: str) -> None:
+            self._backgroundLabel.setText(value.replace(" ", "!"))
+            self.update()
+
+    def setBackgroundText(self, text: str) -> None:
+        self.backgroundText = text
 
     if TYPE_CHECKING:
         foregroundColor: QColor | str
@@ -192,20 +179,3 @@ class LcdLabel(QWidget):
 
     def setbackgroundColor(self, color: QColor | str) -> None:
         self.backgroundColor = color
-
-    if TYPE_CHECKING:
-        backgroundPattern: str
-    else:
-
-        @Property(str)
-        def backgroundPattern(self) -> str:
-            return self._backgroundPattern
-
-        @backgroundPattern.setter
-        def backgroundPattern(self, value: str) -> None:
-            if self._backgroundPattern != value:
-                self._backgroundPattern = value
-                self._backgroundLabel.setText(self._backgroundPattern * self._length)
-
-    def setBackgroundPattern(self, pattern: str) -> None:
-        self.backgroundPattern = pattern

@@ -86,10 +86,10 @@ class LcdLabelPlugin(QDesignerCustomWidgetInterface):
                     </rect>
                 </property>
                 <property name="text">
-                    <string>Pi 1.31</string>
+                    <string>3.14159</string>
                 </property>
-                <property name="backgroundPattern">
-                    <string>8.</string>
+                <property name="backgroundText">
+                    <string>8.88888</string>
                 </property>
                 <property name="foregroundColor">
                     <color>
@@ -104,9 +104,6 @@ class LcdLabelPlugin(QDesignerCustomWidgetInterface):
                     <green>60</green>
                     <blue>60</blue>
                     </color>
-                </property>
-                <property name="length">
-                    <number>9</number>
                 </property>
                 <property name="alignment">
                     <set>Qt::AlignVCenter</set>
