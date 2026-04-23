@@ -81,8 +81,8 @@ class LcdLabelPlugin(QDesignerCustomWidgetInterface):
                     <rect>
                         <x>0</x>
                         <y>0</y>
-                        <width>150</width>
-                        <height>60</height>
+                        <width>0</width>
+                        <height>0</height>
                     </rect>
                 </property>
                 <property name="text">
@@ -106,8 +106,7 @@ class LcdLabelPlugin(QDesignerCustomWidgetInterface):
                     </color>
                 </property>
                 <property name="alignment">
-                    <set>Qt::AlignVCenter</set>
-                    <set>Qt::AlignRight</set>
+                    <set>Qt::AlignRight|Qt::AlignVCenter</set>
                 </property>
             </widget>
         </ui>
