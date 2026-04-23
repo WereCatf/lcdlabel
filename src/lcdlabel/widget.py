@@ -119,7 +119,7 @@ class LcdLabel(QWidget):
 
         @text.setter
         def text(self, value: str) -> None:
-            self._foregroundLabel.setText(value.replace(" ", "!"))
+            self._foregroundLabel.setText(value)
 
     def setText(self, text: str) -> None:
         self.text = text
@@ -134,7 +134,7 @@ class LcdLabel(QWidget):
 
         @backgroundText.setter
         def backgroundText(self, value: str) -> None:
-            self._backgroundLabel.setText(value.replace(" ", "!"))
+            self._backgroundLabel.setText(value)
             self.update()
 
     def setBackgroundText(self, text: str) -> None:
