@@ -26,114 +26,20 @@ class LcdLabel(QWidget):
         self._length = 9
         self._backgroundPattern = "8."
 
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG14Classic-Bold.ttf")
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14Classic-BoldItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG14Classic-Italic.ttf")
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG14Classic-Light.ttf")
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14Classic-LightItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14ClassicMini-Bold.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14ClassicMini-BoldItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14ClassicMini-Italic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14ClassicMini-Light.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14ClassicMini-LightItalic.ttf"
-        )
         QtGui.QFontDatabase.addApplicationFont(
             ":/fonts/fonts/DSEG14ClassicMini-Regular.ttf"
         )
         QtGui.QFontDatabase.addApplicationFont(
             ":/fonts/fonts/DSEG14Classic-Regular.ttf"
         )
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG14Modern-Bold.ttf")
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14Modern-BoldItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG14Modern-Italic.ttf")
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG14Modern-Light.ttf")
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14Modern-LightItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14ModernMini-Bold.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14ModernMini-BoldItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14ModernMini-Italic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14ModernMini-Light.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG14ModernMini-LightItalic.ttf"
-        )
         QtGui.QFontDatabase.addApplicationFont(
             ":/fonts/fonts/DSEG14ModernMini-Regular.ttf"
         )
         QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG14Modern-Regular.ttf")
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG7Classic-Bold.ttf")
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7Classic-BoldItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG7Classic-Italic.ttf")
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG7Classic-Light.ttf")
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7Classic-LightItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7ClassicMini-Bold.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7ClassicMini-BoldItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7ClassicMini-Italic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7ClassicMini-Light.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7ClassicMini-LightItalic.ttf"
-        )
         QtGui.QFontDatabase.addApplicationFont(
             ":/fonts/fonts/DSEG7ClassicMini-Regular.ttf"
         )
         QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG7Classic-Regular.ttf")
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG7Modern-Bold.ttf")
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7Modern-BoldItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG7Modern-Italic.ttf")
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG7Modern-Light.ttf")
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7Modern-LightItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEG7ModernMini-Bold.ttf")
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7ModernMini-BoldItalic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7ModernMini-Italic.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7ModernMini-Light.ttf"
-        )
-        QtGui.QFontDatabase.addApplicationFont(
-            ":/fonts/fonts/DSEG7ModernMini-LightItalic.ttf"
-        )
         QtGui.QFontDatabase.addApplicationFont(
             ":/fonts/fonts/DSEG7ModernMini-Regular.ttf"
         )
