@@ -13,9 +13,9 @@ from PySide6.QtWidgets import (
 from PySide6.QtCore import Qt
 
 try:
-    import lcdlabel.fonts  # noqa: F401
+    import lcdlabel.rc_fonts  # noqa: F401
 except ImportError:
-    import src.lcdlabel.fonts  # noqa: F401
+    import src.lcdlabel.rc_fonts  # noqa: F401
 
 
 class LcdLabel(QWidget):
@@ -48,6 +48,7 @@ class LcdLabel(QWidget):
         QtGui.QFontDatabase.addApplicationFont(
             ":/fonts/fonts/DSEG7SEGGCHAN-Regular.ttf"
         )
+        QtGui.QFontDatabase.addApplicationFont(":/fonts/fonts/DSEGWeather.ttf")
 
         self._foregroundLabel = QLabel(self)
         self._foregroundLabel.setTextInteractionFlags(

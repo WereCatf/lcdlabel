@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>731</width>
+    <height>477</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="LcdLabel" name="clock1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DSEG7 Classic Mini</family>
+           <pointsize>18</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="alignment" stdset="0">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+         <property name="text" stdset="0">
+          <string>12:34.56</string>
+         </property>
+         <property name="backgroundText" stdset="0">
+          <string>8.88888</string>
+         </property>
+         <property name="foregroundColor" stdset="0">
+          <color>
+           <red>0</red>
+           <green>255</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="backgroundColor" stdset="0">
+          <color>
+           <red>60</red>
+           <green>60</green>
+           <blue>60</blue>
+          </color>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="LcdLabel" name="clock2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DSEG14 Classic Mini</family>
+           <pointsize>18</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="alignment" stdset="0">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+         <property name="text" stdset="0">
+          <string>12:34.56</string>
+         </property>
+         <property name="backgroundText" stdset="0">
+          <string>~~:~~.~~</string>
+         </property>
+         <property name="foregroundColor" stdset="0">
+          <color>
+           <red>255</red>
+           <green>0</green>
+           <blue>255</blue>
+          </color>
+         </property>
+         <property name="backgroundColor" stdset="0">
+          <color>
+           <red>60</red>
+           <green>60</green>
+           <blue>60</blue>
+          </color>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>166</red>
+            <green>169</green>
+            <blue>159</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>166</red>
+            <green>169</green>
+            <blue>159</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled/>
+       </palette>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="LcdLabel" name="lcdLabel_3">
+         <property name="font">
+          <font>
+           <family>DSEG7 Classic Mini</family>
+           <pointsize>32</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="alignment" stdset="0">
+          <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+         </property>
+         <property name="text" stdset="0">
+          <string>LEFT!7seg</string>
+         </property>
+         <property name="backgroundText" stdset="0">
+          <string>888888888</string>
+         </property>
+         <property name="foregroundColor" stdset="0">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="backgroundColor" stdset="0">
+          <color alpha="20">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="LcdLabel" name="lcdLabel_4">
+         <property name="font">
+          <font>
+           <family>DSEG14 Classic Mini</family>
+           <pointsize>32</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="alignment" stdset="0">
+          <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+         </property>
+         <property name="text" stdset="0">
+          <string>14SEG!RIGHT</string>
+         </property>
+         <property name="backgroundText" stdset="0">
+          <string>~~~~~~~~~~~</string>
+         </property>
+         <property name="foregroundColor" stdset="0">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="backgroundColor" stdset="0">
+          <color alpha="20">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>85</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>85</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled/>
+       </palette>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="LcdLabel" name="lcdLabel_2">
+         <property name="font">
+          <font>
+           <family>DSEG14 Classic Mini</family>
+           <pointsize>18</pointsize>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="alignment" stdset="0">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+         <property name="text" stdset="0">
+          <string>PARTIALLY!CLOUDY</string>
+         </property>
+         <property name="backgroundText" stdset="0">
+          <string>~~~~~~~~~~~~~~~~</string>
+         </property>
+         <property name="foregroundColor" stdset="0">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="backgroundColor" stdset="0">
+          <color alpha="20">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="LcdLabel" name="lcdLabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>DSEG Weather</family>
+           <pointsize>64</pointsize>
+          </font>
+         </property>
+         <property name="alignment" stdset="0">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+         <property name="text" stdset="0">
+          <string>9</string>
+         </property>
+         <property name="backgroundText" stdset="0">
+          <string>~</string>
+         </property>
+         <property name="foregroundColor" stdset="0">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="backgroundColor" stdset="0">
+          <color alpha="20">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>731</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>LcdLabel</class>
+   <extends>QWidget</extends>
+   <header>lcdlabel</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
