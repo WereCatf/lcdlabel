@@ -1,12 +1,12 @@
 [project]
 name = "lcdlabel"
-version = "0.8.0"
+version = "0.8.1"
 description = "A custom PySide6 label widget that emulates the look of an LCD-display."
 authors = [{ name = "Nita Vesa", email = "nita.vesa@outlook.com" }]
 readme = "README.md"
 license = "BSD-3-Clause"
-requires-python = ">=3.13,<3.15"
-dependencies = ["pyside6 (>=6.11.0,<7.0.0)"]
+requires-python = ">=3.10,<3.15"
+dependencies = ["pyside6 (>=6.10.0,<7.0.0)"]
 keywords = ["PySide6", "Qt", "custom widget", "LCD", "label", "GUI"]
 classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
@@ -15,6 +15,9 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
     "Programming Language :: Python :: 3.15",
