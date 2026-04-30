@@ -4,7 +4,7 @@ on:
     workflow_dispatch: # allows to run the workflow manually from the Actions tab
     push:
         tags:
-            - "v**"
+            - v[0-9]+.[0-9]+.[0-9]+
 
 jobs:
   build:
